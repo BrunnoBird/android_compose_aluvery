@@ -20,8 +20,12 @@ import com.bgaprojects.aluvery.sampledata.sampleProducts
 import com.bgaprojects.aluvery.ui.theme.AluveryTheme
 
 @Composable
-fun ProductSection(title: String, products: List<Product>) {
-    Column {
+fun ProductSection(
+    title: String,
+    products: List<Product>,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier) {
         Text(
             text = title,
             Modifier

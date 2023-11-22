@@ -1,6 +1,6 @@
 package com.bgaprojects.aluvery.sampledata
 
-import com.bgaprojects.aluvery.R
+import androidx.compose.ui.tooling.preview.datasource.LoremIpsum
 import com.bgaprojects.aluvery.model.Product
 import java.math.BigDecimal
 
@@ -49,17 +49,32 @@ val sampleProducts = listOf<Product>(
     Product(
         name = "Hamburger",
         image = "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg",
-        price = BigDecimal("39.90")
+        price = BigDecimal("39.90"),
+        description = LoremIpsum(50).values.first()
     ),
     Product(
         name = "Pizza",
         image = "https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg",
-        price = BigDecimal("99.90")
+        price = BigDecimal("99.90"),
+        description = LoremIpsum(50).values.first()
     ),
     Product(
-        name = "French Fries",
+        name = "French P",
         image = "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg",
         price = BigDecimal("19.90")
+    ),
+
+    Product(
+        name = "Fries M",
+        image = "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg",
+        price = BigDecimal("29.90")
+    ),
+
+    Product(
+        name = "Fries G",
+        image = "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg",
+        price = BigDecimal("39.90"),
+        description = LoremIpsum(50).values.first()
     ),
 )
 
